@@ -29,8 +29,8 @@
         } catch (e) {
             console.error("Error happened reading database");
             modalOpen = true;
-            modalTitle = "Error";
-            modalMessage = "Error happened on reading apps, try again later";
+            modalTitle = $t("error_title");
+            modalMessage = $t("marketplace.error_database_read");
         } finally {
             isLoading = false;
         }
@@ -55,12 +55,12 @@
         try {
             let res = await installAppFromRemote(app.download_url, app.name);
             modalOpen = true;
-            modalTitle = "Success";
-            modalMessage = "App installed successfully";
+            modalTitle = $t("sucess_title");
+            modalMessage = $t("marketplace.app_installed");
         } catch (e) {
             modalOpen = true;
-            modalTitle = "Error";
-            modalMessage = "Error installing app";
+            modalTitle = $t("error_title");
+            modalMessage = $t("marketplace.installing_error");
         } finally {
             isLoading = false;
         }

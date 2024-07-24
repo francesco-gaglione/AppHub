@@ -2,6 +2,8 @@ export default {
     en: {
         "yes_label": "Yes",
         "no_label": "No",
+        "error_title": "Error",
+        "sucess_title": "Success",
 
         "header.install_app": "Install app",
         "header.settings": "Settings",
@@ -66,12 +68,16 @@ export default {
         "marketplace.title": "App store",
         "marketplace.not_found": "No apps found",
         "marketplace.search": "Search app",
-
+        "marketplace.error_database_read": "Error happened on reading apps, try again later",
+        "marketplace.app_installed": "App installed successfully",
+        "marketplace.installing_error": "Error installing app"
     },
     it: {
         "yes_label": "Si",
         "no_label": "No",
-
+        "error_title": "Errore",
+        "sucess_title": "Successo",
+        
         "header.install_app": "Installa app",
         "header.settings": "Impostazioni",
         "header.installed": "App installate",
@@ -136,5 +142,8 @@ export default {
         "marketplace.title": "App store",
         "marketplace.not_found": "Nessuna app trovata",
         "marketplace.search": "Cerca app",
+        "marketplace.error_database_read": "Si è verificato un errore nella lettura delle applicazioni, riprova più tardi",
+        "marketplace.app_installed": "Applicazione installata con successo",
+        "marketplace.installing_error": "Errore durante l'installazione"
     },
 };
